@@ -1,1 +1,20 @@
-
+sudo docker pull ubuntu
+# It will download Ubuntu images only and won't create any container 
+sudo docker image ls
+# listout the docker images
+sudo docker run -it ubuntu
+# create a container and run with interactive mode
+sudo docker container ls
+# check whether the container is running or not
+sudo docker container ls -a
+# listout the container with the exit container also
+sudo docker run -it --name containername ubuntu
+# the same function of 5 line but we can give a specific name to the container
+sudo docker logs containername
+#  listout what are the process done inside the container
+sudo docker run -d --name containername ubuntu
+# The same function as 11 lines but the container is in detached mode
+sudo docker run -d -it --name containername ubuntu
+# container run in background and bash is running because of -it
+sudo docker exec -it containername mkdir test
+# We can make a directory inside the container without login the container 
