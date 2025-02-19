@@ -2,6 +2,8 @@ sudo docker pull ubuntu
 # It will download Ubuntu images only and won't create any container 
 sudo docker image ls
 # listout the docker images
+sudo docker rmi imageid
+# delete the docker image
 sudo docker run -it ubuntu
 # create a container and run with interactive mode
 sudo docker container ls
