@@ -15,6 +15,7 @@ sudo docker ps -a
 sudo docker ps -q
 # listout the containers ID only
 sudo docker stop container ID
+sudo docker rm container_ID
 sudo docker run -it --name containername ubuntu
 # the same function of 5 line but we can give a specific name to the container
 sudo docker logs containername
